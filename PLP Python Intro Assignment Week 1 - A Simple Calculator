@@ -1,0 +1,24 @@
+# Simple Calculator
+# Ask user for input
+"""
+Hit Enter after every step!
+Press Enter to Exit the Calcualtor!
+Explore een large numbers or complex ones!
+"""
+firstNum = int(input("Enter the First Number: "))
+secondNum = int(input("Enter the Second Number: "))
+operation_sign = input("Choose a Mathematical Operation sign like +, -, * or / just once: ")
+if operation_sign == "+":
+    ans = firstNum + secondNum
+elif operation_sign == "-":
+    ans = firstNum - secondNum
+elif operation_sign == "*":
+    ans = firstNum * secondNum
+elif operation_sign == "/":
+    if secondNum != 0:
+        ans = firstNum / secondNum
+    else:
+        ans = "Error! Zero cannot devide any number - so do not use 0 as second number."
+else:
+    ans = "Invalid operation!"
+print("The Answer is:", ans)
